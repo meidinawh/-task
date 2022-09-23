@@ -1,0 +1,52 @@
+id,title,description,preconditions,postconditions,tags,priority,severity,type,behavior,automation,status,is_flaky,layer,steps_type,steps_actions,steps_result,steps_data,milestone_id,milestone,suite_id,suite_parent_id,suite,suite_without_cases
+,,,,,,,,,,,,,,,,,,,,1,,Authentication,1
+1,"Verify fungsi login dengan memasukkan username dan password yang benar",,"User sudah melakukan registrasi","Halaman beranda website ditampilkan",,high,normal,functional,positive,is-not-automated,actual,no,e2e,classic,"1. User memasukkan username yang benar
+2. User password yang benar
+3. User mengklik tombol 'Login'
+","1. 
+2. 
+3. Login berhasil
+","1. standard_user
+2. secret_sauce
+3. 
+",,,1,,Authentication,
+2,"Verifikasi fungsi login dengan username yang benar dan password yang salah",,"User sudah melakukan registrasi","Muncul pesan error ""Epic sadface: Username and password do not match any user in this service""",,high,normal,functional,negative,is-not-automated,actual,no,e2e,classic,"1. User memasukkan username yang benar
+2. User memasukkan password yang salah
+3. User mengklik tombol 'Login'
+","1. 
+2. 
+3. Login gagal
+","1. standar_user
+2. saucedemo
+3. 
+",,,1,,Authentication,
+3,"Verifikasi fungsi login dengan username yang kosong dan password yang benar",,"User sudah melakukan registrasi","Muncul pesan error 'Epic sadface: Username is required'",,high,normal,functional,negative,is-not-automated,actual,no,e2e,classic,"1. User tidak memasukkan data ke kolom username
+2. User memasukkan password yang benar
+3. User mengklik tombol 'Login'
+","1. 
+2. 
+3. Login gagal
+","1. 
+2. secret_sauce
+3. 
+",,,1,,Authentication,
+4,"Verifikasi fungsi login dengan username yang benar dan password yang kosong",,"User sudah melakukan registrasi","Muncul pesan error 'Epic sadface: Username and password do not match any user in this service'",,high,normal,functional,negative,is-not-automated,actual,no,e2e,classic,"1. User memasukkan username yang benar
+2. User tidak memasukkan data ke kolom password
+3. User mengklik tombol 'Login'
+","1. 
+2. 
+3. Login gagal
+","1. standar_user
+2. 
+3. 
+",,,1,,Authentication,
+5,"Verifikasi fungsi login dengan username dan password yang salah",,"User sudah melakukan registrasi","Muncul pesan error 'Epic sadface: Username and password do not match any user in this service'",,high,normal,functional,negative,is-not-automated,actual,no,e2e,classic,"1. User memasukkan username yang salah
+2. User memasukkan password yang salah
+3. User mengklik tombol 'Login'
+","1. 
+2. 
+3. Login gagal
+","1. demo_demo
+2. demo__sauce
+3. 
+",,,1,,Authentication,
