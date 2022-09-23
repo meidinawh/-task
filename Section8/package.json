@@ -1,0 +1,10 @@
+{
+  "name": "Section8",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "meidina",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "10.7.0"
+  }
+}
