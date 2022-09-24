@@ -21,6 +21,11 @@ describe('Create New User', () => {
         cy.request('POST', 'https://reqres.in/api/users', {job: 'Singer'}).then ((response) => {
             expect(response.body).to.have.property('job', 'Singer')
         })
+        cy.request('POST', 'https://reqres.in/api/users', user).then((response) => {
+            expect(response.body.name).to.eq(user.name)
+            expect(response.body.job).to.eq(user.job)
+        })
+
     })
 })
     
